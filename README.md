@@ -31,11 +31,11 @@ We welcome connections of all kinds. For financing inquiries, technical exchange
 
 - **[2026-01-26]** 🎉 **Initial Release**: We have open-sourced the **Yunjue Agent** system!
 - **[2026-01-31]** 📦 **Data Release**: We released the system logs under **zero-start settings** for five benchmark datasets (**HLE**, **DeepSearchQA**, **FinSearchComp (T2&T3)**, **xbench-ScienceQA** and **xbench-DeepSearch**): [Google Drive](https://drive.google.com/drive/folders/1mL5PqKZwOUVIP-UYg0bZr11fotpZmcqb?usp=sharing). New: [Huggingface Dataset for one line code analysis](https://huggingface.co/datasets/YunjueTech/Yunjue-Agent-Traces).
-- **[2026-01-31]** ✨ **Reproduction & Evaluation Update**: We organized the evaluation script and reproduction workflow (see [Reproducing & evaluating results](#-reproducing--evaluating-results) below).
+- **[2026-01-31]** ✨ **Reproduction & Evaluation Update**: We organized the evaluation script and reproduction workflow (see [Reproducing Results](#-reproducing-results) below).
 - **[2026-02-08]** 📄 **Tech Report Update**: We updated the tech report, adding more theoretical and experimental analysis on system performance, cost, and Evolutionary Generality Loss (EGL). You can access it via [arXiv](https://arxiv.org/abs/2601.18226) or the [local PDF](tech_report/YunjueAgentTechReport.pdf).
-- **[Expected: Around Lunar New Year(TBD)]**: An online demo works like Manus / Deep Research.
+- **[2026-02-11]** 🔀 **Reproduction Branch Update**: We migrated reproduction to a dedicated stable branch: [reproduce](https://github.com/YunjueTech/Yunjue-Agent/tree/reproduce).
+- **[2026-02-11]** 🎬 **Demo Release**: We implemented two demos (Web Demo and CLI Skill Demo). See [Demo Quick Start](#-demo-quick-start) below.
 
-> **⚠️ Note on Current Release**: The current codebase is an initial release refactored from our research experiments. While we have verified the core logic, there might be minor bugs or edge cases during reproduction. We are continuously cleaning up the code and welcome any issues or PRs!
 ---
 
 ## 🚀 Quick Start
