@@ -6,23 +6,29 @@ For the meaning of script arguments and configuration fields, see `docs/configur
 
 ### Common configuration (applies to all datasets)
 
-1. In `.env`, set:
+1. Switch to the reproduce branch.
+
+```bash
+git checkout reproduce
+```
+
+2. In `.env`, set:
    - `MAX_TASK_EXECUTION_CNT=8`
    - `MAX_WORKER_RECURSION_LIMIT=10`
    - `WORKER_TOOL_ENHANCE_INTERVAL=5`
 
-2. In `conf.yaml`, set:
+3. In `conf.yaml`, set:
    - `BASIC_MODEL.model` and `CLUSTER_MODEL.model` to `gemini-3-pro`
    - `VISION_MODEL.model` and `SUMMARIZE_MODEL.model` to `gemini-3-flash`
    - `TOOL_ANALYZE_MODEL.model` to `gpt-5-mini`
 
-3. Run the evolution loop:
+4. Run the evolution loop:
 
 ```bash
 ./scripts/evolve.sh --dataset <DATASET> --run_name <RUN_NAME> --batch_size 16
 ```
 
-4. After the run completes, evaluate:
+5. After the run completes, evaluate:
 
 ```bash
 uv run scripts/evaluate.py --benchmark <BENCHMARK> --predictions output/<RUN_NAME>/predictions.jsonl --dataset <DATASET_FILE_OR_NAME> --max-workers 30
